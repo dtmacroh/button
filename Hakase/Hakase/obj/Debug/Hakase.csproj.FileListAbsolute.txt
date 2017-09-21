@@ -1,0 +1,14 @@
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\bin\Debug\Hakase.exe.config
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\bin\Debug\Hakase.exe
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\bin\Debug\Hakase.pdb
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.csprojResolveAssemblyReference.cache
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\MainWindow.g.cs
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\App.g.cs
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase_MarkupCompile.cache
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase_MarkupCompile.lref
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\MainWindow.baml
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.g.resources
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.Properties.Resources.resources
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.csproj.GenerateResource.Cache
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.exe
+\\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.pdb
