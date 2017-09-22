@@ -10,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -22,55 +23,134 @@ namespace Hakase
     /// </summary>
     public partial class MainWindow : Window
     {
-        bool is_poked = false; //is one click
+        private int poked = 0; //is one click
         private Random r = new Random();
         private DispatcherTimer sleepTimer = new DispatcherTimer();
         private bool pressed = false;
+        private bool has_jumped = false;
+        private string btnSource;
+        Storyboard stationary;
+        private bool hold = false;
+        private DateTime timeOfHoldStart { get; set; }
         public MainWindow()
         {
             InitializeComponent();
-            
+            stationary = this.FindResource("stationary") as Storyboard;
+            stationary.Begin();
 
+            sleepTimer.Tick += Timer_Tick;
+            sleepTimer.Interval = System.TimeSpan.FromMilliseconds(3000);
+           
 
         }
 
         public void btnHakase_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.ClickCount == 1)
-            {
-                btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_back.png", UriKind.Relative));
-            }
+
+            sleepTimer.Stop();
+            //if (hold == false)
+            //{
+            //    timeOfHoldStart = DateTime.Now;
+            //}
+            //if (DateTime.Now.Subtract(timeOfHoldStart)>= new TimeSpan(0,0,1))
+            //{
+
+            //    btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_left.png", UriKind.Relative));
+            //    hold = true;
+            //}
             if (e.ClickCount == 2)
             {
-                btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_left.png", UriKind.Relative));
+                Storyboard jump = this.FindResource("jump") as Storyboard;
+                jump.Begin();
+
+                jump.Completed += jumped_Completed;
+                //btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_left.png", UriKind.Relative));
             }
-            if (e.ClickCount == 3)
+            else if (e.ClickCount == 1)
             {
-                btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_right.png", UriKind.Relative));
+                btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_front.png", UriKind.Relative));
+
             }
+
+            //if (e.ClickCount == 3)
+            //{
+            //    btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_right.png", UriKind.Relative));
+            //}
+            pressed = true;
         }
         public void btnHakase_MouseUp(object sender, MouseButtonEventArgs e)
         {
             btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_front.png", UriKind.Relative));
-         
+            pressed = false;
+            if (has_jumped)
+            {
+                stationary.Begin();
+                has_jumped = false;
+            }
+            
+            sleepTimer.Start();
         }
-
+        public void jumped_Completed(object sender, EventArgs e)
+        {
+            has_jumped = true;
+        }
         private void btnHakase_MouseMove(object sender, MouseEventArgs e)
         {
-            
+            if (pressed == false)
+            {
+                //mouse button not held down, we do nothing
+                return;
+            }
+            //Point mousePos = e.GetPosition(this);
+
+
+            //btnHakase.Margin = new Thickness(
+            //    (mousePos.X - (btnHakase.ActualWidth / 2)),
+            //    (mousePos.Y - (btnHakase.ActualHeight / 2)),
+
+            //    (btnHakase.ActualWidth) - mousePos.X,
+            //     (btnHakase.ActualHeight) - mousePos.Y
+            //);
 
         }
 
         //=====================
         //Utility functions
 
-        private void Stopwatch_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
-            //button is poked, Hakase will turn back
+            //button is poked, Hakase will turn back after some time
+            int rand = RandomInt(0, 5);
+             btnSource = ""; 
+            if (rand==1)
+            { 
             btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_right.png", UriKind.Relative));
-            
-        }
+                btnSource = "right";
+            }
+            else if (rand ==2)
+            {
+                btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_back.png", UriKind.Relative));
+                btnSource = "back";
+            }
+            //else if (rand==3)
+            //{
+            //    btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_left.png", UriKind.Relative));
+            //    btnSource = "left";
 
+            //}
+            //else if (rand==4 && btnSource.Equals("right"))
+            //{
+            //    Storyboard goRight = this.FindResource("stationary") as Storyboard;
+            //    goRight.Begin();
+
+            //}
+
+        }
+        //returns a number between low and high inclusive
+        private int RandomInt(int low, int high)
+        {
+            return (r.Next() % (high + 1) + low);
+        }
 
 
     }

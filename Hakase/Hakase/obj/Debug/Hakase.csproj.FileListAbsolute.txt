@@ -12,3 +12,17 @@
 \\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.csproj.GenerateResource.Cache
 \\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.exe
 \\samba.cs.ucalgary.ca\dtmacroh\documents\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.pdb
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\bin\Debug\Hakase.exe.config
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\Hakase.exe
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\Hakase.pdb
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\bin\Debug\Hakase.exe
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\bin\Debug\Hakase.pdb
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\Hakase.csprojResolveAssemblyReference.cache
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\MainWindow.g.cs
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\App.g.cs
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\Hakase_MarkupCompile.cache
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\Hakase_MarkupCompile.lref
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\MainWindow.baml
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\Hakase.g.resources
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\Hakase.Properties.Resources.resources
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\Hakase.csproj.GenerateResource.Cache
