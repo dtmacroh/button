@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,23 +31,24 @@ namespace Hakase
         private bool has_jumped = false;
         private string btnSource;
         Storyboard stationary;
-        private bool hold = false;
+        private bool play_Sax = false;
+        private SoundPlayer saxSound = new SoundPlayer("sounds\\carelessWhisper.wav");
         private DateTime timeOfHoldStart { get; set; }
         public MainWindow()
         {
             InitializeComponent();
-            stationary = this.FindResource("stationary") as Storyboard;
-            stationary.Begin();
+            //stationary = this.FindResource("stationary") as Storyboard;
+            //stationary.Begin();
 
             sleepTimer.Tick += Timer_Tick;
             sleepTimer.Interval = System.TimeSpan.FromMilliseconds(3000);
-           
+            saxSound.Load();
 
         }
 
         public void btnHakase_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            Storyboard playSax = this.FindResource("music") as Storyboard; 
             sleepTimer.Stop();
             //if (hold == false)
             //{
@@ -60,16 +62,29 @@ namespace Hakase
             //}
             if (e.ClickCount == 2)
             {
-                Storyboard jump = this.FindResource("jump") as Storyboard;
-                jump.Begin();
+                //Storyboard jump = this.FindResource("jump") as Storyboard;
+                //jump.Begin();
 
-                jump.Completed += jumped_Completed;
-                //btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_left.png", UriKind.Relative));
+                //jump.Completed += jumped_Completed;
+
+               btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_playing_sax.png", UriKind.Relative));
+
+                playSax.Begin();
+                playSax.Completed += playSax_Completed;
+                saxSound.Play();
+                playSax.RepeatBehavior = RepeatBehavior.Forever;
+                //if (play_Sax==true)
+                //{
+
+                //    btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_front.png", UriKind.Relative));
+                //}
             }
-            else if (e.ClickCount == 1)
+            else if (e.ClickCount == 1 )
             {
                 btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_front.png", UriKind.Relative));
-
+                play_Sax = false;
+                saxSound.Stop();
+                playSax.Stop();
             }
 
             //if (e.ClickCount == 3)
@@ -80,19 +95,19 @@ namespace Hakase
         }
         public void btnHakase_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_front.png", UriKind.Relative));
+           // btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_front.png", UriKind.Relative));
             pressed = false;
-            if (has_jumped)
-            {
-                stationary.Begin();
-                has_jumped = false;
-            }
+           
             
             sleepTimer.Start();
         }
         public void jumped_Completed(object sender, EventArgs e)
         {
             has_jumped = true;
+        }
+        public void playSax_Completed(object sender, EventArgs e)
+        {
+            play_Sax = true;
         }
         private void btnHakase_MouseMove(object sender, MouseEventArgs e)
         {
@@ -101,16 +116,16 @@ namespace Hakase
                 //mouse button not held down, we do nothing
                 return;
             }
-            //Point mousePos = e.GetPosition(this);
+            Point mousePos = e.GetPosition(this);
 
 
-            //btnHakase.Margin = new Thickness(
-            //    (mousePos.X - (btnHakase.ActualWidth / 2)),
-            //    (mousePos.Y - (btnHakase.ActualHeight / 2)),
 
-            //    (btnHakase.ActualWidth) - mousePos.X,
-            //     (btnHakase.ActualHeight) - mousePos.Y
-            //);
+            btnHakase.Margin = new Thickness(
+                (mousePos.X - (btnHakase.ActualWidth / 2)),
+                (mousePos.Y - (btnHakase.ActualHeight / 2)),
+                0,0
+               
+            );
 
         }
 
@@ -132,12 +147,12 @@ namespace Hakase
                 btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_back.png", UriKind.Relative));
                 btnSource = "back";
             }
-            //else if (rand==3)
-            //{
-            //    btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_left.png", UriKind.Relative));
-            //    btnSource = "left";
+            else if (rand == 3)
+            {
+                btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_left.png", UriKind.Relative));
+                btnSource = "left";
 
-            //}
+            }
             //else if (rand==4 && btnSource.Equals("right"))
             //{
             //    Storyboard goRight = this.FindResource("stationary") as Storyboard;
@@ -162,7 +177,7 @@ namespace Hakase
  * Much of this code comes from Kevin Ta, the Teaching Assistant of this course (CPSC 581)
  * 
  * Hakase images come from http://nichijou.wikia.com/wiki/File:Hakase_01.jpg
- * 
+ * Musical notes come from http://clipart-library.com/free-music-note-clipart.html
  * 
  * 
  * 

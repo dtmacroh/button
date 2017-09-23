@@ -103,6 +103,22 @@
     <Resource Include="images\hakase_back.png" />
     <Resource Include="images\hakase_right.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\hakase_playing_sax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\G_clef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\musi_2.png" />
+    <Resource Include="images\musi_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\library.jpeg" />
+    <Content Include="sounds\carelessWhisper.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
