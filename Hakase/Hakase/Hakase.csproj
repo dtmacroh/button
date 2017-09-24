@@ -115,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\library.jpeg" />
+    <Resource Include="images\jungle.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="sounds\carelessWhisper.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -42,3 +42,5 @@ U:\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.exe
 U:\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase.pdb
 U:\cpsc581\project0\Hakase\Hakase\obj\Debug\Hakase_Content.g.cs
 U:\cpsc581\project0\Hakase\Hakase\bin\Debug\sounds\carelessWhisper.wav
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\bin\Debug\sounds\carelessWhisper.wav
+C:\Users\Debbie\Documents\cpsc581\project0\cpsc581-project0\Hakase\Hakase\obj\Debug\Hakase_Content.g.cs
