@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hakase"
         mc:Ignorable="d"
-        Title="MainWindow" Height="432.353" Width="666.176">
+        Title="MainWindow" Height="1357.782" Width="1899.904">
     <Window.Resources>
         <Storyboard x:Key="stationary" RepeatBehavior="1000x">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="btnHakase">
@@ -181,97 +181,103 @@
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="G_clef_png">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0.506"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0.506"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1.4" Value="0.506"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0.506"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="G_clef_png">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0.498"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0.498"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1.4" Value="0.498"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0.498"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="G_clef_png">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-110.667"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-98"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1.4" Value="-98"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="390.75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="390.75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="390.75"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="G_clef_png">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-7.999"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-32.666"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1.4" Value="-32.666"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="421.596"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="421.596"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="421.596"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="G_clef_png">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-22.607"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-22.607"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1.4" Value="-22.607"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-22.607"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="musi_2_png">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-125.834"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-50"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-77.5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="-77.5"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="330.865"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="330.865"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="330.865"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="musi_2_png">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-40.167"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-52.8"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-72.5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="-72.5"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="543.162"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="543.162"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="543.162"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="musi_2_png">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0.329"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.512"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="0.512"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.473"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.473"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="0.473"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="musi_2_png">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0.357"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.569"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="0.569"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.469"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.469"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="0.469"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="musi_2_png">
                 <EasingDoubleKeyFrame KeyTime="0" Value="22.812"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="22.812"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="22.812"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="22.812"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="22.812"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="musi_3_png">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-182"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-115.179"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-139"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-139"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="731.223"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="731.223"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="731.223"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="musi_3_png">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-42.667"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-36.59"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-19"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-19"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="441.847"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="441.847"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="441.847"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="musi_3_png">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-16.884"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-16.884"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-16.884"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-16.884"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="G_clef_png">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="1"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="musi_2_png">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="musi_3_png">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="musi_3_png">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0.515"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0.528"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.79"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0.79"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="0.79"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="musi_3_png">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0.537"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0.594"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.717"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0.717"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="0.717"/>
             </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="musi_3_png">
+                <EasingPointKeyFrame KeyTime="0" Value="0.881,0.581"/>
+                <EasingPointKeyFrame KeyTime="0:0:1.3" Value="0.881,0.581"/>
+                <EasingPointKeyFrame KeyTime="0:0:1.8" Value="0.881,0.581"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="G_clef_png">
+                <EasingPointKeyFrame KeyTime="0" Value="1.963,0.413"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.7" Value="1.963,0.413"/>
+                <EasingPointKeyFrame KeyTime="0:0:1.2" Value="1.963,0.413"/>
+            </PointAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="popFromWall">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="btnHakase">
@@ -351,10 +357,10 @@
     <Window.Background>
         <ImageBrush x:Name="background" ImageSource="images/library.jpeg"></ImageBrush>
     </Window.Background>
-    <Grid>
+    <Canvas Margin="0,0,0,2">
 
 
-        <Image x:Name="btnHakase" Margin="52,174,540,-46" Source="images/hakase_back.png"  MouseLeftButtonDown="btnHakase_MouseDown"  MouseRightButtonDown="btnHakase_MouseRightDown" MouseLeftButtonUp="btnHakase_MouseUp"  MouseMove="btnHakase_MouseMove" RenderTransformOrigin="0.5,0.5" Width="66" >
+        <Image x:Name="btnHakase" Margin="938,545,858,411" Source="images/hakase_back.png"  MouseLeftButtonDown="btnHakase_MouseDown"  MouseRightButtonDown="btnHakase_MouseRightDown" MouseLeftButtonUp="btnHakase_MouseUp"  MouseMove="btnHakase_MouseMove" RenderTransformOrigin="0.5,0.5" >
 
             <Image.RenderTransform>
                 <TransformGroup>
@@ -366,7 +372,7 @@
             </Image.RenderTransform>
 
         </Image>
-        <Image x:Name="G_clef_png" Margin="190.444,117.753,243.556,26.247" Source="images\G_clef.png" RenderTransformOrigin="0.5,0.5" Opacity="0" Stretch="None">
+        <Image x:Name="G_clef_png" Margin="0,0,0,10" Source="images\G_clef.png" RenderTransformOrigin="0.5,0.5" Opacity="0" Stretch="None">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -397,5 +403,5 @@
             </Image.RenderTransform>
         </Image>
 
-    </Grid>
+    </Canvas>
 </Window>

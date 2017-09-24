@@ -239,16 +239,16 @@ namespace Hakase
                 //mouse button not held down, we do nothing
                 return;
             }
-            //Point mousePos = e.GetPosition(this);
+            Point mousePos = e.GetPosition(this);
 
 
 
-            //btnHakase.Margin = new Thickness(
-            //    (mousePos.X - (btnHakase.ActualWidth / 2)),
-            //    (mousePos.Y - (btnHakase.ActualHeight / 2)),
-            //    0,0
+            btnHakase.Margin = new Thickness(
+                (mousePos.X - (btnHakase.ActualWidth / 2)),
+                (mousePos.Y - (btnHakase.ActualHeight / 2)),
+                0,0
                
-            //);
+            );
 
         }
 
@@ -285,14 +285,14 @@ namespace Hakase
                 jump.Completed += jumped_Completed;
 
             }
-            //else if (rand == 5)
-            //{
-            //    background.ImageSource = new BitmapImage(new Uri(@"images/jungle.jpg", UriKind.Relative));
-            //}
-            //else if (rand == 6)
-            //{
-            //    background.ImageSource = new BitmapImage(new Uri(@"images/library.jpeg", UriKind.Relative));
-            //}
+            else if (rand == 5)
+            {
+                background.ImageSource = new BitmapImage(new Uri(@"images/jungle.jpg", UriKind.Relative));
+            }
+            else if (rand == 6)
+            {
+                background.ImageSource = new BitmapImage(new Uri(@"images/library.jpeg", UriKind.Relative));
+            }
         }
         //returns a number between low and high inclusive
         private int RandomInt(int low, int high)
