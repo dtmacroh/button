@@ -158,11 +158,17 @@ namespace Hakase
                         btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_front.png", UriKind.Relative));
                         btnSource = "front";
                     }
+                   
                     else if (rand == 10 && !btnSource.Equals("sax"))
                     //Hakase is clumsy, chance of her falling is 10%.
                     {
                         Storyboard fall = this.FindResource("fall") as Storyboard;
                         fall.Begin();
+                    }
+                    else
+                    {
+                        btnHakase.Source = new BitmapImage(new Uri(@"/images/hakase_back.png", UriKind.Relative));
+                        btnSource = "back";
                     }
                 }
                 else if (backgroundSource.Equals("jungle"))
@@ -176,7 +182,7 @@ namespace Hakase
                         btnSource = "front";
                     }
 
-                    else if (rand >= 1 && rand >= 6 && !btnSource.Equals("sax"))
+                    else if (rand >= 4 && rand >= 10 && !btnSource.Equals("sax"))
                     //Hakase is clumsy, chance of her falling is 60% in the jungle.
                     {
                         Storyboard fall = this.FindResource("fall") as Storyboard;
